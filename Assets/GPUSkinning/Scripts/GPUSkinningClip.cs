@@ -21,4 +21,18 @@ public class GPUSkinningClip
     public bool individualDifferenceEnabled = false;
 
     public GPUSkinningAnimEvent[] events = null;
+
+    /// <summary>
+    /// default speed
+    /// </summary>
+    private float speed = 1;
+
+    /// <summary>
+    /// Speed
+    /// </summary>
+    public float Speed
+    {
+        get { return speed; }
+        set { speed = value; }
+    }
 }

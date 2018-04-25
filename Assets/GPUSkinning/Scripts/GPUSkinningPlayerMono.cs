@@ -164,11 +164,7 @@ public class GPUSkinningPlayerMono : MonoBehaviour
         }
 
 #if UNITY_EDITOR
-        if (!Application.isPlaying)
-        {
-            Resources.UnloadUnusedAssets();
-            UnityEditor.EditorUtility.UnloadUnusedAssetsImmediate();
-        }
+        
 #endif
     }
 }
