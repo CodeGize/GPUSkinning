@@ -10,3 +10,6 @@ GPUSkinning.csproj
 GPUSkinning.sln
 .vs/GPUSkinning/v14/.suo
 GPUSkinning.Editor.csproj
+/.vs/GPUSkinning/v15
+/Assets/Test
+/Assets/Test.meta
