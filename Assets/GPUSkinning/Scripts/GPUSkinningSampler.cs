@@ -840,7 +840,7 @@ public class GPUSkinningSampler : MonoBehaviour
             File.WriteAllText(shaderPath, shaderStr);
             WriteTempData(TEMP_SAVED_SHADER_PATH, shaderPath);
             AssetDatabase.ImportAsset(shaderPath);
-            shader = AssetDatabase.LoadMainAssetAtPath(shaderPath) as Shader;
+            shader = AssetDatabase.LoadAssetAtPath<Shader>(shaderPath);
         }
         else
         {

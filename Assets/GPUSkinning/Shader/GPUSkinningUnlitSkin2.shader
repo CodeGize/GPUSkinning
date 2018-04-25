@@ -1,4 +1,4 @@
-﻿Shader "GPUSkinning/GPUSkinning_Unlit__$AnimName$_"
+﻿Shader "GPUSkinning/GPUSkinning_Unlit_Skin2"
 {
 	Properties
 	{
@@ -32,18 +32,8 @@
 		UNITY_SETUP_INSTANCE_ID(v);
 
 		v2f o;
-
-		_$Bone1
-		float4 pos = skin1(v.vertex, v.uv2, v.uv3);
-		Bone1$_
-
-		_$Bone2
+		
 		float4 pos = skin2(v.vertex, v.uv2, v.uv3);
-		Bone2$_
-
-		_$Bone4
-		float4 pos = skin4(v.vertex, v.uv2, v.uv3);
-		Bone4$_
 
 		o.vertex = UnityObjectToClipPos(pos);
 		o.uv = TRANSFORM_TEX(v.uv, _MainTex);

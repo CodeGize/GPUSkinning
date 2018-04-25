@@ -1,4 +1,4 @@
-﻿Shader "GPUSkinning/GPUSkinning_Specular__$AnimName$_"
+﻿Shader "GPUSkinning/GPUSkinning_Specular_Skin2"
 {
     Properties
     {
@@ -107,23 +107,9 @@ ENDCG
 				float4 normal = float4(v.normal, 0);
 				float4 tangent = float4(v.tangent.xyz, 0);
 
-				_$Bone1
-				float4 pos = skin1(v.vertex, v.uv1, v.uv2);
-				normal = skin1(normal, v.uv1, v.uv2);
-				tangent = skin1(tangent, v.uv1, v.uv2);
-				Bone1$_
-
-				_$Bone2
 				float4 pos = skin2(v.vertex, v.uv1, v.uv2);
 				normal = skin2(normal, v.uv1, v.uv2);
 				tangent = skin2(tangent, v.uv1, v.uv2);
-				Bone2$_
-
-				_$Bone4
-				float4 pos = skin4(v.vertex, v.uv1, v.uv2);
-				normal = skin4(normal, v.uv1, v.uv2);
-				tangent = skin4(tangent, v.uv1, v.uv2);
-				Bone4$_
 
 				v.vertex = pos;
 				v.normal = normal.xyz;

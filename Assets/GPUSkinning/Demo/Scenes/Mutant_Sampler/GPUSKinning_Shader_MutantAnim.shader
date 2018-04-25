@@ -7,7 +7,7 @@ Shader "GPUSkinning/GPUSkinning_Unlit_MutantAnim"
 
 	CGINCLUDE
 	#include "UnityCG.cginc"
-	#include "Assets/GPUSkinning/Resources/GPUSkinningInclude.cginc"
+	#include "Assets/GPUSkinning/Shader/GPUSkinningInclude.cginc"
 
 	struct appdata
 	{
